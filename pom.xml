@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
 
     <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -67,6 +69,12 @@
                     <version>3.8.1</version>
                     <configuration>
                         <compilerArgs>
+                            <arg>-ea</arg>
+                            <arg>-esa</arg>
+                            <arg>-XX:+UnlockExperimentalVMOptions</arg>
+                            <arg>-XX:+UseZGC</arg>
+                            <arg>-XX:+OptimizeStringConcat</arg>
+                            <arg>-XX:+CompactStrings</arg>
                             <arg>-Werror</arg>
                             <arg>-Xlint:all</arg>
                         </compilerArgs>

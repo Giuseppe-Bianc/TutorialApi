@@ -13,9 +13,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tutorialapi" options="-Werror -Xlint:all" />
-      <module name="tutorialapi-rest" options="-Werror -Xlint:all" />
-      <module name="tutorialapi-server" options="-Werror -Xlint:all" />
+      <module name="tutorialapi" options="-ea -esa -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+OptimizeStringConcat -XX:+CompactStrings -Werror -Xlint:all" />
+      <module name="tutorialapi-rest" options="-ea -esa -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+OptimizeStringConcat -XX:+CompactStrings -Werror -Xlint:all" />
+      <module name="tutorialapi-server" options="-ea -esa -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+OptimizeStringConcat -XX:+CompactStrings -Werror -Xlint:all" />
     </option>
   </component>
 </project>
